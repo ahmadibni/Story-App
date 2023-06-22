@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/editbox_background"
+    tools:context=".ui.activity.AddStoryActivity">
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="310dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_image_24" />
+
+    <Button
+        android:id="@+id/button_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/galeri"
+        app:layout_constraintEnd_toEndOf="@+id/previewImageView"
+        app:layout_constraintStart_toStartOf="@+id/previewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
+
+    <EditText
+        android:id="@+id/ed_add_description"
+        android:layout_width="307dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/masukkan_deskripsi"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="6"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="@+id/button_gallery"
+        app:layout_constraintStart_toStartOf="@+id/button_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/button_gallery" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/unggah"
+        app:layout_constraintEnd_toEndOf="@+id/ed_add_description"
+        app:layout_constraintStart_toStartOf="@+id/ed_add_description"
+        app:layout_constraintTop_toBottomOf="@+id/ed_add_description" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAddStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

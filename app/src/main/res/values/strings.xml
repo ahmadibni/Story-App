@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Submission 1 Intermediate</string>
+    <string name="welcome1">Selamat Datang, sudah punya akun?</string>
+    <string name="welcome2">Log In sekarang</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_ada_cerita">Belum ada cerita</string>
+    <string name="keluar">Keluar</string>
+    <string name="tambah_cerita">Tambah Cerita</string>
+    <string name="galeri">Galeri</string>
+    <string name="masukkan_deskripsi">Masukkan deskripsi...</string>
+    <string name="unggah">Unggah</string>
+    <string name="peta">Peta</string>
+</resources>
